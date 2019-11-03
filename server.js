@@ -68,7 +68,8 @@ app.use(cors());
 */
 
 app.get('/',(req,res)=>{
-	res.send(database.users);      //abrar removed
+	//res.send(database.users);      //abrar removed
+	res.send("its working !");
 })
 app.post('/signin',(req,res)=>{signin.handleSignIn(req,res,db,bcrypt)});
 
